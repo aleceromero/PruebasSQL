@@ -64,7 +64,7 @@ select marca from usuarios
 group by marca order by marca desc;
 
 select compania from usuarios
-group by compania order by rand();
+group by compania order by rand(); -- en este ejercicio tuve que revisar la sintaxis de aleatorio/random --
 
 select usuario from usuarios
 where nivel in (0,2);
@@ -115,7 +115,7 @@ group by marca order by count(*) desc;
 select nombre, telefono from usuarios
 where marca !='LG';
 select nombre, telefono from usuarios
-where marca <> 'LG';
+where marca <> 'LG'; -- en este ejercicio vi que estaba tanto la opcion de 'distinto de' y la de 'no es igual' --
 
 select compania from usuarios
 group by compania order by compania;
